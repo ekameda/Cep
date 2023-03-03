@@ -1,0 +1,17 @@
+server: 
+  port: 8080
+  servlet:
+    context-path: /consulta-frete-cep
+
+viaCep:
+  uri: https://viacep.com.br/ws/%s/json/
+
+logging:
+  level: 
+    org: 
+      hibernate: 
+        SQL: DEBUG
+      type: 
+        descriptor: 
+        sql: 
+          BasicBinder: TRACE
